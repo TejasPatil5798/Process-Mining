@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log xes.version="1.0" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+  <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+  <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+  <extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+  <global scope="trace">
+    <string key="concept:name" value="Trace1"/>
+  </global>
+  <global scope="event">
+    <string key="concept:name" value="Event1"/>
+    <date key="time:timestamp" value="2025-03-10T10:00:00Z"/>
+    <string key="lifecycle:transition" value="start"/>
+  </global>
+  <trace>
+    <string key="concept:name" value="Trace1"/>
+    <event>
+      <string key="concept:name" value="Event1"/>
+      <date key="time:timestamp" value="2025-03-10T10:00:00Z"/>
+      <string key="lifecycle:transition" value="start"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Event2"/>
+      <date key="time:timestamp" value="2025-03-10T10:05:00Z"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Event3"/>
+      <date key="time:timestamp" value="2025-03-10T10:10:00Z"/>
+      <string key="lifecycle:transition" value="start"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Event4"/>
+      <date key="time:timestamp" value="2025-03-10T10:15:00Z"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Event5"/>
+      <date key="time:timestamp" value="2025-03-10T10:20:00Z"/>
+      <string key="lifecycle:transition" value="start"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Event6"/>
+      <date key="time:timestamp" value="2025-03-10T10:25:00Z"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+</log>
